@@ -402,6 +402,14 @@ html:not(.deck-ready) .reveal .slides { opacity: 0; }
 .ic { display: block; }
 .s8 .title { font-size: 80px; white-space: nowrap; }
 .s8 .source { max-width: 360px; text-align: right; }
+/* PDF: sin panel de cámara ni puntero */
+@media print { #cam-panel, #gesture-pointer { display: none !important; } }
+html.print-pdf #cam-panel, html.print-pdf #gesture-pointer { display: none !important; }
+/* Equipo con fotos y roles */
+.avatar-panel .photo { object-position: 50% 16%; }
+.role { font: 700 23px/1.3 var(--text); color: var(--navy); }
+.s9-text .pill-row { gap: 12px; }
+.s9-text .pill { height: 50px; font-size: 21px; padding: 0 22px; }
 /* ===== Puntero de gestos y panel de cámara (fuera de .reveal: el zoom no los escala) ===== */
 #gesture-pointer { position: fixed; left: 0; top: 0; width: 72px; height: 72px; pointer-events: none; z-index: 60; opacity: 0; transition: opacity .2s; }
 #gesture-pointer.is-visible { opacity: 1; }
@@ -445,24 +453,24 @@ html:not(.deck-ready) .reveal .slides { opacity: 0; }
     <div class="s9-text">
       <h2 class="title t-split">Somos Fusión Digital, la agencia detrás de la activación</h2>
       <p class="lead up">Agencia de marketing enfocada en construir marcas, diseñar estrategias de comunicación y conectar a las empresas con sus públicos. Trabajamos con IA y revisión humana.</p>
-      <div class="pill-row up"><span class="pill pill-soft">Gemini</span><span class="pill pill-soft">Canva</span><span class="pill pill-soft">ChatGPT</span><span class="pill pill-soft">Claude</span></div>
+      <div class="pill-row up"><span class="pill pill-soft">Gemini</span><span class="pill pill-soft">Canva</span><span class="pill pill-soft">ChatGPT</span><span class="pill pill-soft">Claude</span><span class="pill pill-soft">Antigravity</span><span class="pill pill-soft">GitHub</span><span class="pill pill-soft">Netlify</span><span class="pill pill-soft">Composio</span></div>
     </div>
     <div class="team">
       <article class="member">
         <figure class="panel avatar-panel av-circle" title="Foto: fotos/stephanie.jpg"><div class="shapes" data-cols="1" data-cell="200" data-grid="navy/q-br/blue"></div><span class="initials">SB</span><img class="photo" data-photo="stephanie" alt="Stephanie Bautista Gutierrez"></figure>
-        <h3 class="h3 up">Stephanie Bautista Gutierrez</h3><span class="pill pill-pending up">Rol [pendiente]</span>
+        <h3 class="h3 up">Stephanie Bautista Gutierrez</h3><span class="role up">Paid Media Planner</span>
       </article>
       <article class="member">
         <figure class="panel avatar-panel av-arch" title="Foto: fotos/jenny.jpg"><div class="shapes" data-cols="1" data-cell="200" data-grid="yellow/half-t/white"></div><span class="initials ink">JC</span><img class="photo" data-photo="jenny" alt="Jenny Cisneros Díaz"></figure>
-        <h3 class="h3 up">Jenny Cisneros Díaz</h3><span class="pill pill-pending up">Rol [pendiente]</span>
+        <h3 class="h3 up">Jenny Cisneros Díaz</h3><span class="role up">Social Media y Content Manager</span>
       </article>
       <article class="member">
         <figure class="panel avatar-panel av-leaf" title="Foto: fotos/gabriela-jule.jpg"><div class="shapes" data-cols="1" data-cell="200" data-grid="blue/circle/navy"></div><span class="initials">GJ</span><img class="photo" data-photo="gabriela-jule" alt="Gabriela Jule Menéndez"></figure>
-        <h3 class="h3 up">Gabriela Jule Menéndez</h3><span class="pill pill-pending up">Rol [pendiente]</span>
+        <h3 class="h3 up">Gabriela Jule Menéndez</h3><span class="role up">Estratega digital y Webmaster</span>
       </article>
       <article class="member">
         <figure class="panel avatar-panel av-round" title="Foto: fotos/gabriela-montenegro.jpg"><div class="shapes" data-cols="1" data-cell="200" data-grid="sky/q-tl/yellow"></div><span class="initials ink">GM</span><img class="photo" data-photo="gabriela-montenegro" alt="Gabriela Montenegro López"></figure>
-        <h3 class="h3 up">Gabriela Montenegro López</h3><span class="pill pill-pending up">Rol [pendiente]</span>
+        <h3 class="h3 up">Gabriela Montenegro López</h3><span class="role up">Project Manager</span>
       </article>
     </div>
   </div>
@@ -607,13 +615,13 @@ html:not(.deck-ready) .reveal .slides { opacity: 0; }
     <div class="smart-grid">
       <article class="smart smart-a">
         <span class="icon ic ic-circle c-yellow"></span>
-        <h3 class="smart-h up">Captar al menos 300 leads</h3>
+        <h3 class="smart-h up">Captar al menos 100 leads</h3>
         <p class="body up">Con una landing page que ofrece la guía gratuita «50 frases clave en inglés para tu próxima entrevista de trabajo» a cambio de un registro.</p>
         <p class="bp-row up"><b>Para qué:</b> dar seguimiento comercial y lograr futuras inscripciones.</p>
       </article>
       <article class="card smart smart-b">
         <span class="icon ic ic-quarter c-blue"></span>
-        <h3 class="smart-h">Alcanzar 5,000 cuentas y sumar 300 seguidores</h3>
+        <h3 class="smart-h">Sumar 600 seguidores y 100 leads</h3>
         <p class="body">Con contenido de los pilares «Aprende inglés fácilmente» y «Conoce Real English»: posts, carruseles, reels, TikToks e historias en Facebook, Instagram y TikTok.</p>
         <p class="bp-row"><b>Para qué:</b> fortalecer el reconocimiento y el posicionamiento de Real English.</p>
       </article>
@@ -628,7 +636,7 @@ html:not(.deck-ready) .reveal .slides { opacity: 0; }
     <h2 class="title t-split">Campaña en Meta Ads: $500 al mes durante tres meses</h2>
     <p class="lead up">Noviembre de 2026 a enero de 2027 · $1,500 en total</p>
     <div class="meta-facts">
-      <p class="up"><b>Objetivo</b>Alcanzar 10,000 cuentas y generar 1,000 seguidores nuevos.</p>
+      <p class="up"><b>Objetivo</b>Alcanzar 12,000 cuentas, captar 300 leads y generar 1,000 seguidores nuevos.</p>
       <p class="up"><b>Público</b>Jóvenes de 18 a 25 años y tutores de 30 a 45 que quieren aprender inglés para viajar, estudiar y crecer.</p>
       <p class="up"><b>Ubicación</b>El Salvador, con énfasis en San Salvador y su área metropolitana, Santa Ana y Ahuachapán.</p>
       <p class="up"><b>Formatos</b>Reels, TikToks, carruseles educativos, historias interactivas y posts.</p>
@@ -721,7 +729,7 @@ html:not(.deck-ready) .reveal .slides { opacity: 0; }
       <p class="cover-sub t-split">English for Real Life</p>
       <p class="tagline up">Aprender · Conectar · Crecer</p>
       <span class="pill pill-navy up">Hablemos de la activación de Real English</span>
-      <div class="pill-row up"><span class="pill pill-pending">WhatsApp [pendiente]</span><span class="pill pill-pending">Instagram [pendiente]</span><span class="pill pill-pending">Correo [pendiente]</span></div>
+      
     </div>
     <figure class="panel s11-panel" title="Foto: fotos/cierre.jpg">
       <div class="shapes" data-cols="3" data-cell="234" data-grid="sky/circle/yellow; navy/half-t/sky; sky/q-bl/blue; yellow/q-tr/navy; white/ring/blue; navy/dot/yellow; blue/arch/white; sky/tri-up/navy; white/q-tl/yellow; navy/leaf/sky; yellow/sq/white; sky/half-b/navy"></div>
