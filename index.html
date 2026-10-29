@@ -41,8 +41,8 @@ html:not(.deck-ready) .reveal .slides { opacity: 0; }
 .deck-nav .brand img { height: 62px; width: auto; display: block; }
 .deck-nav .brand .logo-dark, .is-dark .deck-nav .brand .logo-main { display: none; }
 .is-dark .deck-nav .brand .logo-dark { display: block; }
-.nav-items { flex: 1; display: flex; justify-content: center; gap: 2px; }
-.nav-item { font: 700 19px/1 var(--text); color: var(--muted); background: none; border: 0; padding: 12px 13px; border-radius: 999px; cursor: pointer; white-space: nowrap; }
+.nav-items { flex: 1; display: flex; justify-content: center; gap: 8px; }
+.nav-item { font: 700 21px/1 var(--text); color: var(--muted); background: none; border: 0; padding: 14px 22px; border-radius: 999px; cursor: pointer; white-space: nowrap; }
 .nav-item:hover { color: var(--navy); }
 .nav-item.is-active { background: var(--sky); color: var(--navy); }
 .is-dark .nav-item { color: rgba(255,255,255,.72); }
@@ -273,6 +273,135 @@ html:not(.deck-ready) .reveal .slides { opacity: 0; }
 .s11-panel { height: 848px; border-radius: 350px 350px 60px 60px; }
 .tagline { font: 700 26px/1 var(--text); letter-spacing: .32em; color: var(--muted); text-transform: uppercase; }
 
+/* ===== Propuesta de valor ===== */
+.vp-grid { flex: 1; display: grid; grid-template-columns: 1.15fr 1fr; grid-template-rows: 1fr 1fr; gap: 28px 32px; margin-top: 52px; min-height: 0; }
+.vp-grid .card { display: flex; flex-direction: column; justify-content: center; gap: 10px; }
+.vp-grid .card:nth-child(2), .vp-grid .card:nth-child(3) { padding-left: 56px; }
+
+/* ===== Identidad visual ===== */
+.s-id { display: flex; flex-direction: column; }
+.id-grid { flex: 1; display: grid; grid-template-columns: 700px 1fr; gap: 88px; margin-top: 48px; min-height: 0; }
+.id-logos { display: flex; flex-direction: column; gap: 24px; }
+.logo-panel { flex: 1; display: grid; place-items: center; border-radius: 48px; min-height: 0; }
+.logo-panel img { height: 128px; width: auto; display: block; }
+.id-logos .pill-row { margin-top: 8px; }
+.id-side { display: flex; flex-direction: column; justify-content: space-between; }
+.swatches { display: grid; grid-template-columns: repeat(4, 1fr); gap: 30px 24px; }
+.swatch { display: flex; flex-direction: column; gap: 6px; }
+.swatch .dot-sw { width: 92px; height: 92px; border-radius: 50%; background: var(--c); margin-bottom: 8px; }
+.swatch .sw-white { box-shadow: inset 0 0 0 2px rgba(46,48,55,.16); }
+.swatch b { font: 800 23px/1.2 var(--text); color: var(--ink); }
+.swatch span { font: 600 21px/1.2 var(--text); color: var(--muted); }
+.type-row { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+.type-sample { display: flex; align-items: center; gap: 24px; }
+.type-sample .aa { font-size: 104px; line-height: 1; color: var(--navy); }
+.aa-fredoka { font-family: var(--display); font-weight: 700; }
+.aa-nunito { font-family: var(--text); font-weight: 400; }
+.type-sample b { display: block; font: 800 28px/1.2 var(--text); color: var(--ink); }
+.type-sample span { font-size: 23px; line-height: 1.35; color: var(--muted); }
+
+/* ===== Segmentación ===== */
+.seg-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 44px 56px; }
+.seg-item .ic { width: 56px; height: 56px; margin-bottom: 18px; }
+.seg-item .h3 { margin-bottom: 8px; }
+.seg-item .body { font-size: 26px; }
+
+/* ===== Buyer persona ===== */
+.s-bp { display: flex; flex-direction: column; }
+.bp-grid { flex: 1; display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 32px; margin-top: 44px; min-height: 0; }
+.bp { display: flex; flex-direction: column; gap: 18px; }
+.bp-open { padding: 36px 20px; }
+.bp-head { display: flex; gap: 22px; align-items: center; margin-bottom: 6px; }
+.bp-head .h3 { font-size: 31px; }
+.bp-tag { font-size: 21px; font-weight: 700; color: var(--muted); margin-top: 4px !important; }
+.bp-row { font-size: 25px; line-height: 1.42; color: var(--muted); }
+.bp-row b { color: var(--ink); font-weight: 800; }
+.bp .channels { margin-top: auto !important; }
+
+/* ===== Mapa del consumidor ===== */
+.s-cj { display: flex; flex-direction: column; }
+.cj { display: grid; grid-template-columns: repeat(6, 1fr); gap: 28px; margin-top: 52px; }
+.cj li { display: flex; flex-direction: column; gap: 10px; }
+.cj-shape { width: 112px; height: 112px; margin-bottom: 14px; display: grid; place-items: center; background: var(--c); font: 600 46px/1 var(--display); color: var(--white); }
+.cj-shape.dark-num { color: var(--ink); }
+.cj-shape.sh-quarter { border-top-left-radius: 100%; place-items: end; padding: 0 20px 14px 0; }
+.cj-shape.sh-arch { border-radius: 56px 56px 14px 14px; }
+.cj .h3 { font-size: 29px; }
+.cj .body { font-size: 24px; }
+.cj-res { margin-top: 6px !important; font: 800 22px/1.3 var(--text); color: var(--navy); }
+.cj-res::before { content: '\2192\00a0'; }
+.cj-moments { margin-top: auto; display: flex; align-items: center; gap: 36px; padding: 28px 40px; }
+.cj-moments .h3 { font-size: 29px; white-space: nowrap; }
+.cj-moments .pill { height: 52px; font-size: 21px; padding: 0 24px; }
+
+/* ===== Encuesta ===== */
+.s-sv { display: flex; flex-direction: column; }
+.s-sv .lead { margin-top: 12px; }
+.sv-grid { flex: 1; display: grid; grid-template-columns: 1.3fr 1fr; gap: 72px; margin-top: 44px; min-height: 0; }
+.findings { display: flex; flex-direction: column; justify-content: space-between; }
+.finding p { font-size: 27px; line-height: 1.38; color: var(--muted); }
+.pct { font: 600 46px/1 var(--display); color: var(--navy); margin-right: 10px; }
+.bar-track { display: block; height: 16px; border-radius: 8px; background: var(--sky); margin-top: 12px; overflow: hidden; }
+.bar-fill { display: block; height: 100%; border-radius: 8px; background: var(--blue); }
+.sv-side { display: flex; flex-direction: column; gap: 28px; }
+.sv-side .card { flex: 1; display: flex; flex-direction: column; justify-content: center; gap: 10px; }
+
+/* ===== SMART ===== */
+.s-smart { display: flex; flex-direction: column; }
+.s-smart .title { max-width: 1500px; }
+.smart-grid { flex: 1; display: grid; grid-template-columns: 1fr 1.12fr; gap: 40px; margin-top: 52px; min-height: 0; }
+.smart { display: flex; flex-direction: column; gap: 20px; justify-content: center; }
+.smart-a { background: var(--sky); border-radius: 48px; padding: 44px 48px; }
+.smart-b { padding: 44px 48px; }
+.smart-h { font: 600 48px/1.12 var(--display); color: var(--ink); }
+
+/* ===== Meta: datos ===== */
+.meta-facts { display: grid; grid-template-columns: 1fr 1fr; gap: 26px 64px; margin-top: 44px; max-width: 1500px; }
+.meta-facts p { font-size: 26px; line-height: 1.4; color: rgba(255,255,255,.86); }
+.meta-facts b { display: block; font: 800 22px/1.3 var(--text); color: var(--yellow); margin-bottom: 4px; letter-spacing: .02em; }
+.s10 .meta-facts + .bar { margin-top: 48px; }
+
+/* ===== Pilares ===== */
+.s-pil { display: flex; flex-direction: column; }
+.pil-grid { flex: 1; display: grid; grid-template-columns: repeat(5, 1fr); gap: 24px; margin-top: 48px; min-height: 0; }
+.pil { display: flex; flex-direction: column; gap: 14px; padding: 34px 30px; }
+.pil-fill { background: var(--sky); border-radius: 40px; margin-top: 48px; }
+.pil .ic { width: 56px; height: 56px; margin-bottom: 6px; }
+.pil .h3 { font-size: 28px; }
+.pil-ex { font-size: 25px; line-height: 1.4; color: var(--ink); }
+.pil-meta { margin-top: auto !important; font: 700 21px/1.3 var(--text); color: var(--navy); }
+.pil-foot { margin-top: 32px !important; font-size: 25px; color: var(--muted); }
+
+/* ===== Proyección y KPI ===== */
+.s-kpi { display: flex; flex-direction: column; }
+.s-kpi .lead { margin-top: 14px; max-width: 1500px; }
+.kpi-grid { flex: 1; display: grid; grid-template-columns: 1fr 640px; gap: 64px; margin-top: 40px; min-height: 0; align-items: start; }
+.compare.kpi { margin-top: 0; }
+.compare.kpi .metric { width: 440px; }
+.compare.kpi .re { width: 230px; }
+.compare.kpi td, .compare.kpi th { height: 74px; font-size: 28px; }
+.kpi-side { display: flex; flex-direction: column; gap: 36px; }
+.kpi-panel { background: var(--navy); border-radius: 48px; padding: 40px 44px; color: var(--white); }
+.kpi-h { font: 600 42px/1.15 var(--display); color: var(--white); margin-bottom: 14px !important; }
+.kpi-panel p { font-size: 26px; line-height: 1.42; color: rgba(255,255,255,.88); }
+.kpi-list .h3 { font-size: 29px; margin-bottom: 18px; }
+.kpi-list .pill { height: 52px; font-size: 21px; padding: 0 24px; }
+
+/* Ajustes de espacio */
+.swatch .dot-sw { width: 84px; height: 84px; }
+.swatches { gap: 22px 24px; }
+.bp-row { font-size: 27px; }
+.cj-moments { margin-top: 72px; }
+.pil { padding: 30px 28px; }
+.pil-fill { margin-top: 36px; }
+.pil-foot { margin-top: 24px !important; }
+.s8 .compare { margin-top: 28px; }
+.s8 .compare th, .s8 .compare td { height: 60px; }
+.s8 .compare thead th { height: 74px; }
+.s8 .advantage { margin-top: 30px; }
+.ic { display: block; }
+.s8 .title { font-size: 80px; white-space: nowrap; }
+.s8 .source { max-width: 360px; text-align: right; }
 /* ===== Puntero de gestos y panel de cámara (fuera de .reveal: el zoom no los escala) ===== */
 #gesture-pointer { position: fixed; left: 0; top: 0; width: 72px; height: 72px; pointer-events: none; z-index: 60; opacity: 0; transition: opacity .2s; }
 #gesture-pointer.is-visible { opacity: 1; }
@@ -293,7 +422,6 @@ html:not(.deck-ready) .reveal .slides { opacity: 0; }
 </head>
 <body>
 <div class="reveal"><div class="slides">
-
 <!-- 1 · Portada -->
 <section data-nav="Inicio" data-background-color="#FBF5EF">
   <div class="frame s1">
@@ -311,167 +439,11 @@ html:not(.deck-ready) .reveal .slides { opacity: 0; }
   </div>
 </section>
 
-<!-- 2 · Problema -->
-<section data-nav="Problema" data-background-color="#FBF5EF">
-  <div class="frame s2">
-    <h2 class="title s2-title t-split">Una gran propuesta que todavía pocos conocen</h2>
-    <div class="s2-body">
-      <figure class="panel s2-panel" title="Foto: fotos/problema.jpg">
-        <div class="shapes" data-cols="3" data-cell="234" data-grid="sky/q-tr/navy; white/dot/blue; yellow/half-l/white; navy/circle/yellow; sky/leaf/blue; white/sq/navy; white/tri-tr/yellow; navy/half-t/sky; sky/ring/navy"></div>
-        <img class="photo" data-photo="problema" alt="Persona que duda antes de hablar en inglés">
-      </figure>
-      <ul class="points">
-        <li class="point"><span class="icon ic ic-circle c-navy"></span><div><h3 class="h3 up">Poca visibilidad</h3><p class="body up">Real English parte con 106 seguidores en Instagram; Academia Europea suma 858,000 fans en Facebook.</p></div></li>
-        <li class="point"><span class="icon ic ic-tri c-yellow"></span><div><h3 class="h3 up">Miedo a hablar</h3><p class="body up">El público quiere inglés útil, pero el tiempo, el presupuesto y la inseguridad lo frenan.</p></div></li>
-        <li class="point"><span class="icon ic ic-quarter c-blue"></span><div><h3 class="h3 up">Sin prueba social</h3><p class="body up">Todavía no hay testimonios ni una comunidad que respalde la calidad de las clases.</p></div></li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<!-- 3 · Solución (fondo oscuro) -->
-<section data-nav="Solución" data-background-color="#0055A5" class="is-dark">
-  <div class="frame s3">
-    <div class="deco" aria-hidden="true"><span class="icon d1 c-yellow"></span><span class="icon d2 c-sky"></span><span class="icon d3 c-blue"></span></div>
-    <div class="s3-head">
-      <h2 class="title t-split">Contenido útil que lleva a la inscripción</h2>
-      <p class="lead up">Con el concepto <strong>English for Real Life</strong> y el mensaje <strong>«Amplía tu mundo»</strong>, Fusión Digital activa a Real English en Facebook, Instagram y TikTok.</p>
-    </div>
-    <div class="s3-grid">
-      <article class="card s3-a">
-        <h3 class="h3">Cinco pilares de contenido</h3>
-        <p class="body">Publicaciones, carruseles, reels, TikToks e historias que enseñan, entretienen e informan.</p>
-        <div class="pill-row"><span class="pill pill-outline">Práctico</span><span class="pill pill-outline">Educativo</span><span class="pill pill-outline">Entretenimiento</span><span class="pill pill-outline">Informativo</span><span class="pill pill-outline">Comunidad</span></div>
-      </article>
-      <article class="card s3-b">
-        <h3 class="h3">Una guía gratuita para captar leads</h3>
-        <p class="body">«50 frases clave en inglés para tu próxima entrevista de trabajo», en una landing page.</p>
-      </article>
-      <article class="card s3-c">
-        <h3 class="h3">Asesoría personalizada por WhatsApp</h3>
-        <p class="body">Respuestas claras y empáticas sobre nivel, horarios y pago, sin presionar.</p>
-      </article>
-    </div>
-  </div>
-</section>
-
-<!-- 4 · Cómo funciona -->
-<section data-nav="Proceso" data-background-color="#FBF5EF">
-  <div class="frame s4">
-    <h2 class="title t-split">De un reel a la primera clase</h2>
-    <p class="lead up">Cuatro pasos conectados entre redes sociales, landing page, WhatsApp y clases en vivo.</p>
-    <ol class="steps">
-      <li class="step st1"><span class="icon step-shape sh-quarter c-navy">1</span><h3 class="h3 up">Descubre</h3><p class="body up">Reels y TikToks con situaciones reales en inglés.</p></li>
-      <li class="step st2"><span class="icon step-shape sh-half c-yellow dark-num">2</span><h3 class="h3 up">Descarga la guía</h3><p class="body up">La landing page entrega la guía gratuita a cambio de un registro.</p></li>
-      <li class="step st3"><span class="icon step-shape sh-circle c-blue">3</span><h3 class="h3 up">Conversa por WhatsApp</h3><p class="body up">Asesoría personalizada sobre nivel, horarios y pago.</p></li>
-      <li class="step st4"><span class="icon step-shape sh-arch c-sky dark-num">4</span><h3 class="h3 up">Aprende en vivo</h3><p class="body up">Clases virtuales en grupos de 7 a 10, con práctica y seguimiento.</p></li>
-    </ol>
-  </div>
-</section>
-
-<!-- 5 · Mercado -->
-<section data-nav="Mercado" data-background-color="#FBF5EF">
-  <div class="frame s5">
-    <figure class="panel s5-panel" title="Foto: fotos/mercado.jpg">
-      <div class="shapes" data-cols="2" data-cell="270" data-grid="yellow/q-bl/navy; navy/circle/sky; sky/arch/blue; white/q-tr/yellow; blue/half-b/white; sky/dot/navy; white/tri-up/navy; yellow/ring/white"></div>
-      <img class="photo" data-photo="mercado" alt="Jóvenes y adultos aprendiendo inglés">
-    </figure>
-    <div class="s5-main">
-      <h2 class="title t-split">Tres perfiles, una meta: hablar con confianza</h2>
-      <article class="card persona">
-        <span class="icon avatar bg-navy">AL</span>
-        <div><h3 class="h3">Andrés López, 22</h3><p class="body">Busca su primer empleo y quiere una base funcional de inglés para estudiar, trabajar y viajar.</p><p class="channels">TikTok · Instagram</p></div>
-      </article>
-      <div class="persona-pair">
-        <article class="persona"><span class="icon avatar bg-yellow">GH</span><div><h3 class="h3 up">Gabriel Hernández, 26</h3><p class="body up">Quiere crecer en su trabajo y viajar; le faltan tiempo y seguridad al hablar.</p><p class="channels up">Instagram · Facebook · WhatsApp</p></div></article>
-        <article class="persona"><span class="icon avatar bg-blue">MF</span><div><h3 class="h3 up">María Fernanda Rivera, 42</h3><p class="body up">Busca formación confiable y con seguimiento para su hijo adolescente.</p><p class="channels up">Facebook · WhatsApp</p></div></article>
-      </div>
-      <div class="pill-row up"><span class="pill pill-soft">El Salvador · alcance nacional con clases virtuales</span><span class="pill pill-pending">Tamaño de mercado [pendiente]</span></div>
-    </div>
-  </div>
-</section>
-
-<!-- 6 · Modelo de negocio -->
-<section data-nav="Modelo" data-background-color="#FBF5EF">
-  <div class="frame s6">
-    <h2 class="title t-split">Real English cobra una mensualidad de $34.95 por estudiante</h2>
-    <div class="offer">
-      <div class="offer-item"><span class="icon ic ic-circle c-blue"></span><div><h3 class="h3 up">Clases virtuales en vivo</h3><p class="body up">Grupos de 7 a 10 estudiantes, con práctica y retroalimentación.</p></div></div>
-      <div class="offer-item"><span class="icon ic ic-arch c-yellow"></span><div><h3 class="h3 up">A futuro, clases presenciales</h3><p class="body up">Para ampliar la oferta y llegar a nuevos estudiantes.</p></div></div>
-    </div>
-    <div class="flow">
-      <div class="card node"><span class="node-v">$500</span><span class="node-l">en anuncios</span></div>
-      <span class="icon arrow"></span>
-      <div class="card node"><span class="node-v">300</span><span class="node-l">leads</span></div>
-      <span class="icon arrow"></span>
-      <div class="card node"><span class="node-v">50</span><span class="node-l">inscripciones</span></div>
-      <span class="icon arrow"></span>
-      <div class="card node node-final"><span class="node-v">$1,747.50</span><span class="node-l">el primer mes</span></div>
-    </div>
-    <p class="pill pill-note up">Escenario hipotético del informe · CPL $1.67 · CPA $10 · ROI 249.5 %</p>
-  </div>
-</section>
-
-<!-- 7 · Tracción -->
-<section data-nav="Tracción" data-background-color="#FBF5EF">
-  <div class="frame s7">
-    <h2 class="title t-split">Lo que ya construimos y validamos</h2>
-    <div class="bento">
-      <article class="b-land">
-        <figure class="panel b-panel" title="Foto: fotos/landing.jpg">
-          <div class="shapes" data-cols="3" data-cell="207" data-grid="navy/half-t/yellow; sky/sq/navy; yellow/q-br/white; white/circle/blue; navy/arc-br/sky; sky/half-r/navy"></div>
-          <img class="photo" data-photo="landing" alt="Landing page de Real English">
-        </figure>
-        <h3 class="h3 up">Landing page con guía gratuita</h3>
-        <p class="body up">Registro y descarga de «50 frases clave en inglés para tu próxima entrevista de trabajo».</p>
-      </article>
-      <article class="card b-survey">
-        <span class="icon ic ic-circle c-navy"></span>
-        <h3 class="h3">Encuesta digital de 20 preguntas</h3>
-        <p class="body">31 respuestas al 26 de octubre de 2026, conectadas a Google Sheets con aviso automático por correo.</p>
-      </article>
-      <article class="b-bench">
-        <span class="icon ic ic-tri c-yellow"></span>
-        <h3 class="h3 up">Benchmark de 8 academias</h3>
-        <p class="body up">Comunidad e interacción en Facebook, Instagram y TikTok.</p>
-      </article>
-      <article class="card b-brand">
-        <span class="icon ic ic-quarter c-blue"></span>
-        <h3 class="h3">Marca lista para publicar</h3>
-        <p class="body">Manual de marca, calendario editorial de dos semanas y cinco copys.</p>
-      </article>
-    </div>
-  </div>
-</section>
-
-<!-- 8 · Competencia -->
-<section data-nav="Competencia" data-background-color="#FBF5EF">
-  <div class="frame s8">
-    <div class="s8-head">
-      <h2 class="title t-split">Así se compara Real English</h2>
-      <p class="source up">Fuente: benchmark de Fusión Digital, octubre de 2026</p>
-    </div>
-    <table class="compare">
-      <thead class="up"><tr><th class="metric">Métrica</th><th>Academia Europea</th><th>Direct English</th><th>E4CC</th><th>Be franch</th><th class="re">Real English</th></tr></thead>
-      <tbody>
-        <tr class="up"><td class="metric">Fans en Facebook</td><td>858,000</td><td>319,000</td><td>24,000</td><td>2,600</td><td class="re">0</td></tr>
-        <tr class="up"><td class="metric">Seguidores en Instagram</td><td>11,000</td><td>38,900</td><td>67,000</td><td>4,239</td><td class="re">106</td></tr>
-        <tr class="up"><td class="metric">Seguidores en TikTok</td><td>65,400</td><td>210,000</td><td>28,000</td><td>2,852</td><td class="re">0</td></tr>
-        <tr class="up"><td class="metric">Interacciones por publicación (Instagram)</td><td>61.8</td><td>171.4</td><td>111.5</td><td>56.1</td><td class="re">0</td></tr>
-        <tr class="up"><td class="metric">Interacciones por publicación (TikTok)</td><td>119.7</td><td>380.7</td><td>88.2</td><td>65.4</td><td class="re">0</td></tr>
-        <tr class="up"><td class="metric">Mensualidad</td><td><span class="pending">[por verificar]</span></td><td><span class="pending">[por verificar]</span></td><td><span class="pending">[por verificar]</span></td><td><span class="pending">[por verificar]</span></td><td class="re">$34.95</td></tr>
-        <tr class="up"><td class="metric">Clases virtuales en vivo</td><td><span class="pending">[por verificar]</span></td><td><span class="pending">[por verificar]</span></td><td><span class="pending">[por verificar]</span></td><td><span class="pending">[por verificar]</span></td><td class="re"><span class="yes">Sí</span></td></tr>
-      </tbody>
-    </table>
-    <p class="advantage up"><strong>Nuestra ventaja:</strong> clases virtuales en vivo, en grupos de 7 a 10 estudiantes, con inglés para la vida real y una mensualidad de $34.95.</p>
-  </div>
-</section>
-
-<!-- 9 · Equipo -->
-<section data-nav="Equipo" data-background-color="#FBF5EF">
+<!-- 2 · Fusión Digital (brevemente) -->
+<section data-nav="Fusión y marca" data-background-color="#FBF5EF">
   <div class="frame s9">
     <div class="s9-text">
-      <h2 class="title t-split">Fusión Digital, el equipo detrás de la activación</h2>
+      <h2 class="title t-split">Somos Fusión Digital, la agencia detrás de la activación</h2>
       <p class="lead up">Agencia de marketing enfocada en construir marcas, diseñar estrategias de comunicación y conectar a las empresas con sus públicos. Trabajamos con IA y revisión humana.</p>
       <div class="pill-row up"><span class="pill pill-soft">Gemini</span><span class="pill pill-soft">Canva</span><span class="pill pill-soft">ChatGPT</span><span class="pill pill-soft">Claude</span></div>
     </div>
@@ -496,12 +468,171 @@ html:not(.deck-ready) .reveal .slides { opacity: 0; }
   </div>
 </section>
 
-<!-- 10 · Lo que pedimos (fondo oscuro) -->
-<section data-nav="Inversión" data-background-color="#2E3037" class="is-dark">
+<!-- 3 · Propuesta de valor (fondo oscuro) -->
+<section data-nav="Fusión y marca" data-background-color="#0055A5" class="is-dark">
+  <div class="frame s3">
+    <div class="deco" aria-hidden="true"><span class="icon d1 c-yellow"></span><span class="icon d2 c-sky"></span><span class="icon d3 c-blue"></span></div>
+    <div class="s3-head">
+      <h2 class="title t-split">Inglés para la vida real, en grupos pequeños y en vivo</h2>
+      <p class="lead up">Real English ocupa el espacio entre las academias masivas e impersonales y las clases particulares costosas.</p>
+    </div>
+    <div class="vp-grid">
+      <article class="card"><h3 class="h3">Grupos pequeños</h3><p class="body">De 7 a 10 estudiantes: más práctica real y más atención.</p></article>
+      <article class="card"><h3 class="h3">Inglés contextual</h3><p class="body">Situaciones de la vida real: viajes, trabajo y conversación.</p></article>
+      <article class="card"><h3 class="h3">Precio accesible</h3><p class="body">$34.95 al mes por clases virtuales en vivo.</p></article>
+      <article class="card"><h3 class="h3">Confianza como meta</h3><p class="body">El objetivo es poder hablar con naturalidad y sin vergüenza.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- 4 · Identidad visual -->
+<section data-nav="Fusión y marca" data-background-color="#FBF5EF">
+  <div class="frame s-id">
+    <h2 class="title t-split">Una identidad cercana, clara y profesional</h2>
+    <div class="id-grid">
+      <div class="id-logos">
+        <figure class="panel logo-panel bg-white"><img data-logo="main" alt="Logo de Real English, versión principal"></figure>
+        <figure class="panel logo-panel bg-navy"><img data-logo="dark" alt="Logo de Real English, versión para fondo oscuro"></figure>
+        <div class="pill-row up"><span class="pill pill-soft">Profesional</span><span class="pill pill-soft">Cercana</span><span class="pill pill-soft">Amigable</span></div>
+      </div>
+      <div class="id-side">
+        <div class="swatches">
+          <div class="swatch up"><span class="icon dot-sw c-navy"></span><b>Azul oscuro</b><span>#0055A5</span></div>
+          <div class="swatch up"><span class="icon dot-sw c-blue"></span><b>Azul medio</b><span>#268BCF</span></div>
+          <div class="swatch up"><span class="icon dot-sw c-yellow"></span><b>Amarillo</b><span>#FECF58</span></div>
+          <div class="swatch up"><span class="icon dot-sw c-ink"></span><b>Gris oscuro</b><span>#2E3037</span></div>
+          <div class="swatch up"><span class="icon dot-sw c-sky"></span><b>Azul claro</b><span>#DCEFFA</span></div>
+          <div class="swatch up"><span class="icon dot-sw c-coral"></span><b>Coral</b><span>#F05A59</span></div>
+          <div class="swatch up"><span class="icon dot-sw c-beige"></span><b>Beige suave</b><span>#F5E6D6</span></div>
+          <div class="swatch up"><span class="icon dot-sw c-white sw-white"></span><b>Blanco</b><span>#FFFFFF</span></div>
+        </div>
+        <div class="type-row">
+          <div class="type-sample up"><span class="aa aa-fredoka">Aa</span><div><b>Fredoka</b><span>Títulos y mensajes de impacto</span></div></div>
+          <div class="type-sample up"><span class="aa aa-nunito">Aa</span><div><b>Nunito</b><span>Textos, botones y llamados a la acción</span></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 5 · Segmentación -->
+<section data-nav="Público" data-background-color="#FBF5EF">
+  <div class="frame s5">
+    <figure class="panel s5-panel" title="Foto: fotos/mercado.jpg">
+      <div class="shapes" data-cols="2" data-cell="270" data-grid="yellow/q-bl/navy; navy/circle/sky; sky/arch/blue; white/q-tr/yellow; blue/half-b/white; sky/dot/navy; white/tri-up/navy; yellow/ring/white"></div>
+      <img class="photo" data-photo="mercado" alt="Jóvenes y adultos aprendiendo inglés">
+    </figure>
+    <div class="s5-main">
+      <h2 class="title t-split">Segmentación del público</h2>
+      <div class="seg-grid">
+        <div class="seg-item"><span class="icon ic ic-circle c-navy"></span><h3 class="h3 up">Geográfica</h3><p class="body up">El Salvador, con alcance nacional por clases virtuales. A futuro, Latinoamérica y migrantes en EE. UU.</p></div>
+        <div class="seg-item"><span class="icon ic ic-tri c-yellow"></span><h3 class="h3 up">Demográfica</h3><p class="body up">Jóvenes al inicio profesional (20–24), adultos profesionales (25–35) y padres o tutores de adolescentes (12–17).</p></div>
+        <div class="seg-item"><span class="icon ic ic-quarter c-blue"></span><h3 class="h3 up">Psicográfica</h3><p class="body up">Buscan mejores oportunidades, seguridad para hablar y aprendizaje útil; los frenan el presupuesto, el tiempo y la confianza.</p></div>
+        <div class="seg-item"><span class="icon ic ic-arch c-sky"></span><h3 class="h3 up">Conductual</h3><p class="body up">Buscan cursos, precios y horarios en Instagram, TikTok, WhatsApp y por recomendaciones.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 6 · Buyer persona -->
+<section data-nav="Público" data-background-color="#FBF5EF">
+  <div class="frame s-bp">
+    <h2 class="title t-split">Nuestras buyer personas</h2>
+    <div class="bp-grid">
+      <article class="card bp">
+        <div class="bp-head"><span class="icon avatar bg-navy">AL</span><div><h3 class="h3">Andrés López, 22</h3><p class="bp-tag">Joven adulto · Prioridad primaria</p></div></div>
+        <p class="bp-row"><b>Necesita</b> hablar con confianza para estudiar, trabajar, viajar y en su vida diaria.</p>
+        <p class="bp-row"><b>Lo frena</b> el presupuesto, la falta de orientación y la inseguridad.</p>
+        <p class="bp-row"><b>Mensaje:</b> «Aprende lo necesario para abrirte camino».</p>
+        <p class="channels">TikTok · Instagram</p>
+      </article>
+      <article class="bp bp-open">
+        <div class="bp-head"><span class="icon avatar bg-yellow">GH</span><div><h3 class="h3 up">Gabriel Hernández, 26</h3><p class="bp-tag up">Profesional · Prioridad secundaria</p></div></div>
+        <p class="bp-row up"><b>Necesita</b> ampliar sus opciones laborales y comunicarse en el trabajo y en sus viajes.</p>
+        <p class="bp-row up"><b>Lo frena</b> el tiempo disponible y la inseguridad al hablar.</p>
+        <p class="bp-row up"><b>Mensaje:</b> «Habla inglés con más confianza».</p>
+        <p class="channels up">Instagram · Facebook · WhatsApp</p>
+      </article>
+      <article class="card bp">
+        <div class="bp-head"><span class="icon avatar bg-blue">MF</span><div><h3 class="h3">María Fernanda Rivera, 42</h3><p class="bp-tag">Madre o tutora · Campaña diferenciada</p></div></div>
+        <p class="bp-row"><b>Necesita</b> formación confiable, con acompañamiento y seguimiento para su hijo.</p>
+        <p class="bp-row"><b>La frenan</b> las dudas sobre calidad, seguridad virtual y costo.</p>
+        <p class="bp-row"><b>Mensaje:</b> «Invierte en nuevas oportunidades para tu hijo».</p>
+        <p class="channels">Facebook · WhatsApp</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 7 · Mapa del consumidor -->
+<section data-nav="Público" data-background-color="#FBF5EF">
+  <div class="frame s-cj">
+    <h2 class="title t-split">Mapa del consumidor en seis etapas</h2>
+    <ol class="cj">
+      <li><span class="icon cj-shape sh-circle c-navy">1</span><h3 class="h3 up">Descubrimiento</h3><p class="body up">Reels, TikToks y situaciones reales en inglés.</p><p class="cj-res up">Reconocimiento</p></li>
+      <li><span class="icon cj-shape sh-arch c-yellow dark-num">2</span><h3 class="h3 up">Consideración</h3><p class="body up">Explicaciones, ejemplos de clase y preguntas frecuentes.</p><p class="cj-res up">Confianza</p></li>
+      <li><span class="icon cj-shape sh-quarter c-blue">3</span><h3 class="h3 up">Decisión</h3><p class="body up">Orientación personalizada por WhatsApp, sin presionar.</p><p class="cj-res up">Intención de inscripción</p></li>
+      <li><span class="icon cj-shape sh-circle c-sky dark-num">4</span><h3 class="h3 up">Compra</h3><p class="body up">Registro sencillo, pago confirmado y bienvenida clara.</p><p class="cj-res up">Inscripción</p></li>
+      <li><span class="icon cj-shape sh-arch c-navy">5</span><h3 class="h3 up">Fidelización</h3><p class="body up">Práctica, retroalimentación y seguimiento del progreso.</p><p class="cj-res up">Continuidad</p></li>
+      <li><span class="icon cj-shape sh-quarter c-yellow dark-num">6</span><h3 class="h3 up">Promoción</h3><p class="body up">Testimonios voluntarios y recomendaciones.</p><p class="cj-res up">Referidos</p></li>
+    </ol>
+    <div class="card cj-moments"><h3 class="h3">Momentos de la verdad</h3><div class="pill-row"><span class="pill pill-soft">Primera respuesta</span><span class="pill pill-soft">Primera clase</span><span class="pill pill-soft">Primera evidencia de progreso</span><span class="pill pill-soft">Primera renovación</span></div></div>
+  </div>
+</section>
+
+<!-- 8 · Resultados de la encuesta -->
+<section data-nav="Público" data-background-color="#FBF5EF">
+  <div class="frame s-sv">
+    <h2 class="title t-split">Lo que nos dijeron 31 personas</h2>
+    <p class="lead up">Encuesta digital de 20 preguntas · respuestas del 26 de octubre de 2026</p>
+    <div class="sv-grid">
+      <ul class="findings">
+        <li class="finding up"><p><span class="pct">77%</span> dice que lo frena la poca práctica hablando (45%) o la vergüenza a equivocarse (32%).</p><span class="bar-track"><span class="bar-fill" style="width: 77%"></span></span></li>
+        <li class="finding up"><p><span class="pct">74%</span> seguiría videos cortos de situaciones reales: restaurante, entrevista, viaje.</p><span class="bar-track"><span class="bar-fill" style="width: 74%"></span></span></li>
+        <li class="finding up"><p><span class="pct">68%</span> prefiere clases virtuales en vivo (35%) o mixtas (32%).</p><span class="bar-track"><span class="bar-fill" style="width: 68%"></span></span></li>
+        <li class="finding up"><p><span class="pct">45%</span> descubre cursos en TikTok y 42% en Instagram.</p><span class="bar-track"><span class="bar-fill" style="width: 45%"></span></span></li>
+      </ul>
+      <div class="sv-side">
+        <article class="card"><h3 class="h3">Mensaje favorito</h3><p class="body">«Habla. Sin vergüenza. En inglés.» fue el más elegido (39%).</p></article>
+        <article class="card"><h3 class="h3">Precio, a vigilar</h3><p class="body">42% pagaría de $25 a $40 al mes; 52% busca algo por debajo de $25.</p></article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 9 · Objetivos SMART -->
+<section data-nav="Estrategia" data-background-color="#FBF5EF">
+  <div class="frame s-smart">
+    <h2 class="title t-split">Objetivos SMART, de noviembre de 2026 a enero de 2027</h2>
+    <div class="smart-grid">
+      <article class="smart smart-a">
+        <span class="icon ic ic-circle c-yellow"></span>
+        <h3 class="smart-h up">Captar al menos 300 leads</h3>
+        <p class="body up">Con una landing page que ofrece la guía gratuita «50 frases clave en inglés para tu próxima entrevista de trabajo» a cambio de un registro.</p>
+        <p class="bp-row up"><b>Para qué:</b> dar seguimiento comercial y lograr futuras inscripciones.</p>
+      </article>
+      <article class="card smart smart-b">
+        <span class="icon ic ic-quarter c-blue"></span>
+        <h3 class="smart-h">Alcanzar 5,000 cuentas y sumar 300 seguidores</h3>
+        <p class="body">Con contenido de los pilares «Aprende inglés fácilmente» y «Conoce Real English»: posts, carruseles, reels, TikToks e historias en Facebook, Instagram y TikTok.</p>
+        <p class="bp-row"><b>Para qué:</b> fortalecer el reconocimiento y el posicionamiento de Real English.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 10 · Campaña de Meta (fondo oscuro) -->
+<section data-nav="Estrategia" data-background-color="#2E3037" class="is-dark">
   <div class="frame s10">
     <div class="deco" aria-hidden="true"><span class="icon d1 c-blue"></span><span class="icon d2 c-yellow"></span><span class="icon d3 c-sky"></span></div>
-    <h2 class="title t-split">Pedimos $1,500 para tres meses de pauta en Meta Ads</h2>
-    <p class="lead up">$500 al mes, de noviembre de 2026 a enero de 2027. Así se reparte cada mes:</p>
+    <h2 class="title t-split">Campaña en Meta Ads: $500 al mes durante tres meses</h2>
+    <p class="lead up">Noviembre de 2026 a enero de 2027 · $1,500 en total</p>
+    <div class="meta-facts">
+      <p class="up"><b>Objetivo</b>Alcanzar 10,000 cuentas y generar 1,000 seguidores nuevos.</p>
+      <p class="up"><b>Público</b>Jóvenes de 18 a 25 años y tutores de 30 a 45 que quieren aprender inglés para viajar, estudiar y crecer.</p>
+      <p class="up"><b>Ubicación</b>El Salvador, con énfasis en San Salvador y su área metropolitana, Santa Ana y Ahuachapán.</p>
+      <p class="up"><b>Formatos</b>Reels, TikToks, carruseles educativos, historias interactivas y posts.</p>
+    </div>
     <div class="bar up" role="img" aria-label="Reparto mensual: 70 % captación, 15 % pruebas, 10 % remarketing, 5 % reserva">
       <span class="seg seg1" style="flex: 70">70 %</span><span class="seg seg2" style="flex: 15">15 %</span><span class="seg seg3" style="flex: 10">10 %</span><span class="seg seg4" style="flex: 5">5 %</span>
     </div>
@@ -511,14 +642,78 @@ html:not(.deck-ready) .reveal .slides { opacity: 0; }
       <li><i class="c-yellow"></i>Remarketing · <b>$50</b></li>
       <li><i class="c-beige"></i>Reserva para ajustes · <b>$25</b></li>
     </ul>
-    <div class="s10-foot">
-      <p class="goal up">Meta del periodo: <strong>300 leads</strong> y <strong>50 inscripciones</strong>.</p>
-      <span class="pill pill-yellow up">Aprobemos la campaña</span>
+  </div>
+</section>
+
+<!-- 11 · Pilares de comunicación -->
+<section data-nav="Estrategia" data-background-color="#FBF5EF">
+  <div class="frame s-pil">
+    <h2 class="title t-split">Cinco pilares, con piezas del calendario editorial</h2>
+    <div class="pil-grid">
+      <article class="card pil"><span class="icon ic ic-circle c-navy"></span><h3 class="h3">Inglés para la vida real</h3><p class="pil-ex">«5 frases que sí vas a usar cuando viajes»</p><p class="pil-meta">Carrusel · Instagram · 16 nov</p></article>
+      <article class="pil pil-fill"><span class="icon ic ic-tri c-yellow"></span><h3 class="h3 up">Aprende inglés fácilmente</h3><p class="pil-ex up">«3 frases para ganar tiempo cuando estás hablando inglés»</p><p class="pil-meta up">Video · TikTok · 23 nov</p></article>
+      <article class="card pil"><span class="icon ic ic-quarter c-blue"></span><h3 class="h3">English con humor</h3><p class="pil-ex">«Mi inglés en mi cabeza vs. mi inglés cuando me hablan»</p><p class="pil-meta">Video · TikTok · 18 nov</p></article>
+      <article class="pil pil-fill"><span class="icon ic ic-arch c-navy"></span><h3 class="h3 up">Conoce Real English</h3><p class="pil-ex up">«Aprende inglés para usarlo, no solo para estudiarlo»</p><p class="pil-meta up">Post · Facebook · 20 nov</p></article>
+      <article class="card pil"><span class="icon ic ic-leaf c-yellow"></span><h3 class="h3">Speak Up! Sin miedo a equivocarte</h3><p class="pil-ex">«¿Qué dirías si no entiendes?»</p><p class="pil-meta">Historias · Instagram · 22 nov</p></article>
+    </div>
+    <p class="pil-foot up">Calendario editorial: 8 publicaciones del 16 al 29 de noviembre de 2026 en Facebook, Instagram y TikTok.</p>
+  </div>
+</section>
+
+<!-- 12 · Benchmarking -->
+<section data-nav="Competencia y KPI" data-background-color="#FBF5EF">
+  <div class="frame s8">
+    <div class="s8-head">
+      <h2 class="title t-split">Benchmarking de la competencia</h2>
+      <p class="source up">Fuente: benchmark de Fusión Digital, octubre de 2026</p>
+    </div>
+    <table class="compare">
+      <thead class="up"><tr><th class="metric">Métrica</th><th>Academia Europea</th><th>Direct English</th><th>E4CC</th><th>Be franch</th><th class="re">Real English</th></tr></thead>
+      <tbody>
+        <tr class="up"><td class="metric">Fans en Facebook</td><td>858,000</td><td>319,000</td><td>24,000</td><td>2,600</td><td class="re">0</td></tr>
+        <tr class="up"><td class="metric">Seguidores en Instagram</td><td>11,000</td><td>38,900</td><td>67,000</td><td>4,239</td><td class="re">106</td></tr>
+        <tr class="up"><td class="metric">Seguidores en TikTok</td><td>65,400</td><td>210,000</td><td>28,000</td><td>2,852</td><td class="re">0</td></tr>
+        <tr class="up"><td class="metric">Interacciones por publicación (Instagram)</td><td>61.8</td><td>171.4</td><td>111.5</td><td>56.1</td><td class="re">0</td></tr>
+        <tr class="up"><td class="metric">Interacciones por publicación (TikTok)</td><td>119.7</td><td>380.7</td><td>88.2</td><td>65.4</td><td class="re">0</td></tr>
+        <tr class="up"><td class="metric">Mensualidad</td><td><span class="pending">[por verificar]</span></td><td><span class="pending">[por verificar]</span></td><td><span class="pending">[por verificar]</span></td><td><span class="pending">[por verificar]</span></td><td class="re">$34.95</td></tr>
+        <tr class="up"><td class="metric">Clases virtuales en vivo</td><td><span class="pending">[por verificar]</span></td><td><span class="pending">[por verificar]</span></td><td><span class="pending">[por verificar]</span></td><td><span class="pending">[por verificar]</span></td><td class="re"><span class="yes">Sí</span></td></tr>
+      </tbody>
+    </table>
+    <p class="advantage up"><strong>Ventaja competitiva de Real English:</strong> clases virtuales en vivo, en grupos de 7 a 10 estudiantes, con inglés para la vida real y una mensualidad de $34.95.</p>
+  </div>
+</section>
+
+<!-- 13 · Proyección con la campaña -->
+<section data-nav="Competencia y KPI" data-background-color="#FBF5EF">
+  <div class="frame s-kpi">
+    <h2 class="title t-split">Proyección de la campaña</h2>
+    <p class="lead up">Escenario hipotético con $500 en anuncios: se reemplaza con datos reales cuando la campaña esté activa.</p>
+    <div class="kpi-grid">
+      <table class="compare kpi">
+        <thead class="up"><tr><th class="metric">Indicador</th><th>Escenario inicial</th><th class="re">Optimizado</th></tr></thead>
+        <tbody>
+          <tr class="up"><td class="metric">Leads</td><td>200</td><td class="re">300</td></tr>
+          <tr class="up"><td class="metric">Inscripciones</td><td>30</td><td class="re">50</td></tr>
+          <tr class="up"><td class="metric">Conversión lead → inscripción</td><td>15.00%</td><td class="re">16.67%</td></tr>
+          <tr class="up"><td class="metric">Costo por lead</td><td>$2.50</td><td class="re">$1.67</td></tr>
+          <tr class="up"><td class="metric">Costo por inscripción</td><td>$16.67</td><td class="re">$10.00</td></tr>
+        </tbody>
+      </table>
+      <div class="kpi-side">
+        <article class="panel kpi-panel">
+          <h3 class="kpi-h up">Ingresos del primer mes: $1,747.50</h3>
+          <p class="up">50 inscripciones × $34.95 de mensualidad, con un ROI publicitario estimado de 249.5 %.</p>
+        </article>
+        <div class="kpi-list up">
+          <h3 class="h3">KPI que vamos a medir</h3>
+          <div class="pill-row"><span class="pill pill-soft">Alcance</span><span class="pill pill-soft">Seguidores</span><span class="pill pill-soft">Leads</span><span class="pill pill-soft">Costo por lead</span><span class="pill pill-soft">Conversión</span><span class="pill pill-soft">Retención</span></div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- 11 · Cierre -->
+<!-- 14 · Contacto -->
 <section data-nav="Contacto" data-background-color="#FBF5EF">
   <div class="frame s11">
     <div class="s11-text">
@@ -711,13 +906,18 @@ html:not(.deck-ready) .reveal .slides { opacity: 0; }
   const sections = Array.from(document.querySelectorAll('.reveal .slides > section'));
 
   // 1. Barra de navegación en cada slide
+  // Bloques de la barra: las slides con el mismo data-nav forman un bloque
+  const groups = [];
+  sections.forEach((s, i) => { if (!groups.some((g) => g.name === s.dataset.nav)) groups.push({ name: s.dataset.nav, first: i }); });
   const arrow = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>';
   sections.forEach((sec, i) => {
     const nav = document.createElement('nav');
     nav.className = 'deck-nav';
     nav.setAttribute('aria-label', 'Secciones');
-    const items = sections.map((s, j) =>
-      `<li><button type="button" class="nav-item${i === j ? ' is-active' : ''}" data-goto="${j}"${i === j ? ' aria-current="step"' : ''}>${s.dataset.nav}</button></li>`).join('');
+    const items = groups.map((g) => {
+      const active = g.name === sec.dataset.nav;
+      return `<li><button type="button" class="nav-item${active ? ' is-active' : ''}" data-goto="${g.first}"${active ? ' aria-current="step"' : ''}>${g.name}</button></li>`;
+    }).join('');
     nav.innerHTML = `<span class="brand"><img class="logo-main" src="${LOGO_MAIN}" alt="Real English"><img class="logo-dark" src="${LOGO_DARK}" alt="Real English"></span>` +
       `<ol class="nav-items">${items}</ol><button type="button" class="nav-next" aria-label="Siguiente slide">${arrow}</button>`;
     sec.prepend(nav);
@@ -728,6 +928,8 @@ html:not(.deck-ready) .reveal .slides { opacity: 0; }
     if (go) { Reveal.slide(Number(go.dataset.goto)); go.blur(); }
     else if (next) { Reveal.next(); next.blur(); }
   });
+
+  document.querySelectorAll('img[data-logo]').forEach((img) => { img.src = img.dataset.logo === 'dark' ? LOGO_DARK : LOGO_MAIN; });
 
   // 2. Composiciones geométricas: data-grid = "fondo/forma/color; ..."
   document.querySelectorAll('.shapes').forEach((box) => {

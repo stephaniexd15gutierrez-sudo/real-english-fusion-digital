@@ -4,13 +4,11 @@ Guarda aquí las fotos con estos nombres exactos (.jpg, .png o .webp).
 Si una foto no está, la slide muestra la composición geométrica de la marca.
 
   portada.jpg               Slide 1  · Personas conversando en inglés
-  problema.jpg              Slide 2  · Alguien que duda antes de hablar
+  stephanie.jpg             Slide 2  · Stephanie Bautista Gutierrez
+  jenny.jpg                 Slide 2  · Jenny Cisneros Díaz
+  gabriela-jule.jpg         Slide 2  · Gabriela Jule Menéndez
+  gabriela-montenegro.jpg   Slide 2  · Gabriela Montenegro López
   mercado.jpg               Slide 5  · Jóvenes y adultos estudiando
-  landing.jpg               Slide 7  · Captura de la landing page
-  stephanie.jpg             Slide 9  · Stephanie Bautista Gutierrez
-  jenny.jpg                 Slide 9  · Jenny Cisneros Díaz
-  gabriela-jule.jpg         Slide 9  · Gabriela Jule Menéndez
-  gabriela-montenegro.jpg   Slide 9  · Gabriela Montenegro López
-  cierre.jpg                Slide 11 · Viaje, estudio o conversación
+  cierre.jpg                Slide 14 · Viaje, estudio o conversación
 
 Manual de marca: personas reales o aspiracionales, luz limpia y actitud positiva.
